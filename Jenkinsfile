@@ -1,6 +1,7 @@
 pipeline {
+  agent any
   stages {
-    stage('Parallel') {
+    stage('Say Java') {
         failFast true
         parallel {
           stage('Java 8') {
